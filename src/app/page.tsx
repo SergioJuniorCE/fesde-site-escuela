@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function Component() {
   return (
@@ -56,7 +57,7 @@ export default function Component() {
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 border-t">
           <div className="container grid items-center gap-4 px-4 md:px-6 lg:grid-cols-[1fr_600px] lg:gap-10">
-            <img
+            <Image
               alt="Image"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
               height="400"
@@ -142,7 +143,7 @@ export default function Component() {
             </div>
             <div className="mx-auto max-w-4xl grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="flex flex-col gap-2">
-                <img
+                <Image
                   alt="Image"
                   className="mx-auto rounded-full object-cover aspect-square overflow-hidden sm:order-last sm:aspect-none sm:w-full sm:h-400"
                   height="200"
@@ -158,7 +159,7 @@ export default function Component() {
                 </div>
               </div>
               <div className="flex flex-col gap-2">
-                <img
+                <Image
                   alt="Image"
                   className="mx-auto rounded-full object-cover aspect-square overflow-hidden sm:order-last sm:aspect-none sm:w-full sm:h-400"
                   height="200"
