@@ -10,13 +10,18 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Logo from '../../public/psiconexion-logo.svg'
 
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <Link className="flex items-center justify-center" href="#">
-          <MountainIcon className="h-6 w-6" />
+          <Image src={Logo}
+            alt="Logo"
+            height="64"
+            width="192"
+          />
           <span className="sr-only">Acme Inc</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -35,7 +40,7 @@ export default function Component() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="w-full pt-12 md:pt-24 lg:pt-32 border-t">
+        <section className="w-full p-12 md:pt-24 lg:pt-32 border-t">
           <div className="container grid items-center gap-6 px-4 md:px-6">
             <div className="space-y-2 text-center">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
@@ -45,7 +50,7 @@ export default function Component() {
                 We're here to help you navigate life's challenges. Let us help you find peace of mind.
               </p>
             </div>
-            <div className="mx-auto w-full max-w-2xl space-y-4">
+            <div className="flex justify-center">
               <Link
                 className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                 href="#"
@@ -222,24 +227,5 @@ export default function Component() {
         </nav>
       </footer>
     </div>
-  )
-}
-
-function MountainIcon(props: any) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-    </svg>
   )
 }
