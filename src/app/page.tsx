@@ -1,34 +1,27 @@
-/* eslint-disable react/no-unescaped-entities */
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/4j35rpFjMT7
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import Link from "next/link"
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
 import Image from "next/image"
 import Logo from '../../public/psiconexion-logo.svg'
-import { EnvelopeClosedIcon } from "@radix-ui/react-icons"
 import { SiGmail } from "react-icons/si"
+
+const COMPANY_NAME = "Psiconexion"
 
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="px-4 lg:px-6 h-14 flex items-center">
+      <header className="px-4 lg:px-6 h-14 flex items-center fixed w-full z-20 top-0 start-0 bg-white bg-opacity-50">
         <Link className="flex items-center justify-center" href="/">
           <Image src={Logo}
             alt="Logo"
             height="64"
             width="192"
           />
-          <span className="sr-only">Psiconexion</span>
+          <span className="sr-only">{COMPANY_NAME}</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#consulta">
@@ -159,7 +152,7 @@ function Contacto() {
                 <CardTitle>Alejandro Solís Bórquez</CardTitle>
               </CardHeader>
               <CardContent className="pt-3 flex gap-2 items-center">
-              <span><SiGmail /></span>
+                <span><SiGmail /></span>
                 <a href="mailto:alejandro.solis.e@lasallenoroeste.edu.mx" className="underline">alejandro.solis.e@lasallenoroeste.edu.mx</a>
               </CardContent>
             </Card>
@@ -185,7 +178,7 @@ function Footer() {
   return (
     <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
       <p className="text-xs text-gray-500 dark:text-gray-400">
-        © 2024 Acme Therapy Consultancy. All rights reserved.
+        © 2024 {COMPANY_NAME}. Derechos reservados.
       </p>
       <nav className="sm:ml-auto flex gap-4 sm:gap-6">
         <Link className="text-xs hover:underline underline-offset-4" href="#">
