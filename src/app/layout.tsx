@@ -15,8 +15,8 @@ const taviraj = Taviraj({
   weight: "100"
 })
 export const metadata: Metadata = {
-  title: "Terapeutas Inc.",
-  description: "Terapeutas Inc. es una plataforma de terapia en línea que conecta a terapeutas con pacientes.",
+  title: "Psiconexion.",
+  description: "Psiconexion. es una plataforma de terapia en línea que conecta a terapeutas con pacientes.", 
 };
 
 export default function RootLayout({
