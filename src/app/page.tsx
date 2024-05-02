@@ -212,8 +212,8 @@ function Contacto() {
           </div>
         </div>
         <div className="mx-auto max-w-[600px] flex flex-col gap-4 justify-center items-center text-center">
-          <div>
-            <p>Dinámica de consejería</p>
+          <div className="my-3">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">Dinámica de consejería</h2>
           </div>
           <p>
             Llamar al celular <a href="tel:6444511543" className="underline">6444511543</a> o mandar un correo electrónico a <a href="mailto:joelalbertogastelum@gmail.com" className="underline">joelalbertogastelum@gmail.com</a> pidiendo información del programa.
